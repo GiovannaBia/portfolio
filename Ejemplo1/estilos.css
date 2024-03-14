@@ -1,0 +1,264 @@
+﻿
+:root{
+    --padding-container: 100px 0;
+}
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    height: 100%;
+    font-family: "Poppins", sans-serif;
+    color: #ffff;
+    background-size: 100% 100%;
+    max-height: contain;
+}
+
+.container {
+    width:90%;
+    max-width:1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: var(--padding-container);
+}
+
+.hero {
+    width: 100%;
+    height: 90vh;
+    min-height: 600px;
+    max-height: 800px;
+    position: relative;
+    display: flex;
+    align-items: center;
+ 
+}
+
+    .hero::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('img/fondohero.jpg');
+        background-size: cover;
+        clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
+        z-index: -1;
+    }
+
+.header {
+    height: 100px;
+    text-align:center;
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    --padding-container: 0;
+    color: #F7B21E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+    margin-left: 0px, 20px;
+}
+
+.logo {
+    font-size: 24px;
+    color: #F7B21E;
+}
+
+ul {
+    list-style-type: none; 
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+    margin-right: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: #F7B21E;
+    font-size: 20px;
+}
+
+ a:hover {
+        color: #ffd700; /* Cambiar color al pasar el mouse */
+    }
+
+ .hero__textos {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+
+ }
+.cta {
+    background-color: #F7B21E;
+    color: #fff;
+    font-weight: 400;
+    border-radius: 30px;
+    padding: 20px 20px;
+    margin-top: 70px;
+    width: fit-content;
+    text-align: center;
+}
+
+i {
+    font-size: 35px;
+    color: #ffff;
+}
+   
+.iconos {
+    width:70%;
+    display: flex; 
+    justify-content:space-between;
+    padding: 10px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.proyecto{
+    margin-top: 30px;
+}
+
+
+p {
+    font-size: 20px;
+}
+
+.presentacion {
+    padding: 100px;
+    background-color: #A7A5A1;
+    text-align: center;
+    margin: 300px auto;
+    width: 60%;
+    display: grid;
+    grid-template-rows: repeat(1fr);
+    gap: 2em;
+
+}
+
+
+ .presentacion .cta {
+     margin:auto;
+ }
+
+ #proyectos {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+
+ }
+
+.card-proyecto {
+    background-color: #F7B21E;
+    margin: 30px;
+    padding: 20px;
+    position:relative;
+}
+
+.proyecto1 {
+    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('img/gestordearticulos.jpg');
+    background-size: cover;
+}
+    .proyecto1 img { 
+        width:60%;
+        transition: transform 0.5s ease;
+        max-width: 100%;
+        overflow: hidden;
+    }
+        .proyecto1 img:hover {
+            transform: scale(1.1);
+        }
+
+.proyecto2 {
+    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('img/gestordediscos.png');
+    background-size: cover;
+}
+
+.proyecto2 img {
+    width: 60%;
+    transition: transform 0.5s ease;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+    .proyecto2 img:hover {
+        transform: scale(1.1);
+    }
+
+.card-proyecto img {
+    width: 60%;
+}
+.card-proyecto a {
+    background-color: #A7A5A1;
+    color: #ffffff;
+    border-radius: 30px;
+    padding: 10px;
+    position: absolute;
+    bottom: 100px;
+    right: 100px;
+}
+
+    
+
+.formulario-contacto {
+    color: #F7B21E;
+    text-align:center;
+    padding: 30px;
+    display:flex;
+    flex-direction: column;
+
+}
+
+.gestor {
+    color: #F7B21E;
+    text-align: center;
+
+}
+.gestor p {
+    width:70%;
+    text-align:center;
+    margin: auto;
+}
+.imagenes-gestor {
+    display: flex;
+   flex-direction:column;
+    max-width: 1000px;
+    align-items: center;
+    margin: auto;
+}
+
+.imagen {
+    width: 500px;
+    margin: 20px;
+    transition: transform 0.5s ease;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    overflow: hidden;
+}
+    .imagen:hover {
+        transform: scale(1.4) ;
+    }
+
+    TextBox {
+        font-size: 35px;
+    }
+
+.volver {
+    text-align: center;
+    background-color: #A7A5A1;
+    color: #ffffff;
+    border-radius: 30px;
+    padding: 10px;
+    display:block;
+    width: 80px;
+    margin: 10px auto;
+}
+
+.footer {
+    
+    color: #F7B21E;
+}

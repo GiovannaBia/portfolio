@@ -1,0 +1,48 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Mimaster.master.cs" Inherits="Ejemplo1.Mimaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Giovanna Bianchini</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="estilos.css" rel="stylesheet" />
+    <style >
+        @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Big+Shoulders+Display:wght@700&family=Poppins:wght@300;400;700&display=swap')
+    </style>
+    <link href="https://fontawesome.com/icons" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+
+</head>
+
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <div class="header">
+                <nav class="container nav__container">
+                    <div class="logo"> <a href="Pagina1.aspx">Giovanna Bianchini</a> </div>
+                    
+                    <ul>
+                        <li><a href="Pagina1.aspx#sobre-mi">Sobre mí</a></li>
+                        <li><a href="Pagina1.aspx#proyectos">Proyectos</a></li>
+                        <li><a href="Contacto.aspx">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+           
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+
+            
+            </asp:ContentPlaceHolder>
+            <div class="footer">
+                <footer> Todos los derechos reservados </footer>
+            </div>
+            
+        </div>
+    </form>
+</body>
+</html>
